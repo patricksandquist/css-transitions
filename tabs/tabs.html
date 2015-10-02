@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <ul class="tabs" data-content-tabs=".tab-contents">
+      <li><a class="active" href="#Afghan-Hound">Afghan Hound</a></li>
+      <li><a href="#Pug">Pug</a></li>
+      <li><a href="#Sheepdog">English Sheepdog</a></li>
+    </ul>
+
+    <section class="tab-contents">
+      <article class="active" id="Afghan-Hound"><p>Learn about the temperament and personality of the Afghan Hound. Discover what he's like to live with, his traits and characteristics and how he generally behaves. And look at lots of Afghan Hound photos.</p></article>
+      <article id="Pug"><p>Pugs are small dogs with big personalities. They live to love and to be loved and were bred for one reason: to be your companion. They will try to live in your lap, eat your food, and sleep on your bed. They are incredibly playful, outgoing, adaptable, happy, lively, and affectionate. They need human companionship to survive, and will not do well at all if left alone for long periods of time. Your Pug will want and need to be part of your family. A Pug will spend his life by your side, every moment of it. They are excellent with children and are usually good with other animals in the household. Pugs are low-activity dogs. They enjoy the daily walk, but don't need hours of exercise each day. They don't like water (most cannot swim) and they don't like Frisbees or balls. They like to lie in your lap instead. You will need to be careful that your Pug doesn't exercise to the point of overheating. You will have to be especially vigilant on hot and humid days. Pugs, due to their flat faces, simply cannot tolerate extreme temperatures and can die in a short period of time. They should never be left outside unattended. They love to eat (and eat and eat!), and so are prone to obesity. So you need to watch how much you feed them and get them doing some exercise. They are intelligent and trainable, but are often slow to housetrain. They are also not car-smart and will be safest in a fenced-in yard. In short, these affectionate little guys live to please you, and they expect to be the center of attention. They are funny, cocky, sensitive, and cuddly. But you should know that they tend to sneeze, snort, and snore ... and fart ... a lot. Hey, at least they don't bark much!</p></article>
+      <article id="Sheepdog"><p>The Old English Sheepdog (OES) is a sweet-tempered family pet. They are affectionate and devoted to their family and love to spend time with their people. They are adaptable, easygoing, fun-loving, and robust. They can be a bit clownish and OES owners claim they have a great sense of humor. They definitely want to be the center of attention and if they don't get enough attention and affection from their humans, this can negatively affect their temperament and emotional wellbeing. These are large, boisterous dogs who can be a bit stubborn, so it is important to start with basic obedience training early. Old English Sheepdogs are intelligent and do well in conformation, obedience, agility, and herding. They enjoy working and are happiest when they have a job to do. If they get bored, they can be destructive. They also need daily exercise, and like to spend time outdoors, though once they've had their jaunt around the neighborhood, they will also be your resident couch potato. They will try to sleep in your bed, and probably try to sleep on top of you. They do well with children, are protective of them and love to play with them, but care needs to be taken with younger children, as an OES might try to herd "his kids" by bumping into them. (They might also try to herd local ducks and cats.) Old English Sheepdogs are alert and protective but generally won't bark a warning if something unusual is happening, so they don't make good watchdogs. In short, these are athletic, bold, faithful, trustworthy, and gentle companions who will make it their job to be devoted to you.</p></article>
+    </section>
+
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      });
+    </script>
+  </body>
+</html>

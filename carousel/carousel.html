@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="./carousel.js"></script>
+    <link href="./carousel.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <figure class="carousel">
+    <ul class="items">
+      <li><img src="http://appacademy.github.io/jQueryPlugins/images/cat1.jpeg" /></li>
+      <li><img src="http://appacademy.github.io/jQueryPlugins/images/cat5.jpeg" /></li>
+      <li><img src="http://appacademy.github.io/jQueryPlugins/images/cat8.jpeg" /></li>
+      <li><img src="http://appacademy.github.io/jQueryPlugins/images/cat12.jpeg" /></li>
+      <li><img src="http://appacademy.github.io/jQueryPlugins/images/cat14.jpeg" /></li>
+    </ul>
+
+    <button class="slide-right">Prev</button>
+    <button class="slide-left">Next</button>
+  </figure>
+
+    <script>
+      $(function() {
+        $('.carousel').carousel();
+      });
+    </script>
+  </body>
+</html>
